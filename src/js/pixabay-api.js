@@ -24,6 +24,6 @@ export const fetchImages = async (searchText, page, pageSize = 15) => {
       return {
         results: data.hits,
         total: data.totalHits
-      }
-    })
+      };
+    });
 };
