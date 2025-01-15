@@ -49,7 +49,7 @@ const loadImagesPage = async (page) => {
       // show load more button if there are more images to load
       if (pageSize * page < total) {
         toggleVisibility(loadMoreElement, true);
-      } else {
+      } else if (page !== 1) {
         renderInfo('We\'re sorry, but you\'ve reached the end of search results.')
       }
     }
